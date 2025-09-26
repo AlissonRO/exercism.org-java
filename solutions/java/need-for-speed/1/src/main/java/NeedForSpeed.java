@@ -37,7 +37,7 @@ class RaceTrack {
     }
 
     public boolean canFinishRace(NeedForSpeed car) {
-      
+        // simula até acabar a bateria
         while (!car.batteryDrained()) {
             car.drive();
             if (car.distanceDriven() >= this.distance) {
